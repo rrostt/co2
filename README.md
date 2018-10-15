@@ -10,6 +10,18 @@ Initially it includes data from mat-klimat-listan, which is a document from 2014
 
 This is indeed work in progress. Please help out if you can.
 
+# API
+
+It is all JSON and REST. PR for GraphQL would be sweet, but should iterate more on data format.
+
+## /all
+
+Get a list of all entries.
+
+## /q?property1=value1[&...&propertyN=valueN]
+
+Perform a query. Any query parameter will filter the result. E.g. /q?name=beef will return all beef entries. /q?country=sweden will result in everything relevant in Sweden. /q?country=sweden&name=candy will result in candy as consumed in Sweden.
+
 # Use it
 
 Currently available here: https://co2.rost.me
