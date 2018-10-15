@@ -5,11 +5,20 @@
   "main": "index.js",
   "scripts": {
     "start": "node lib/index",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest test/unit/",
+    "integration": "jest test/integration/"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "express": "^4.16.4"
+  },
+  "devDependencies": {
+    "eslint": "^5.7.0",
+    "eslint-config-prettier": "^3.1.0",
+    "eslint-plugin-prettier": "^3.0.0",
+    "jest": "^23.6.0",
+    "prettier": "^1.14.3",
+    "supertest": "^3.3.0"
   }
 }
