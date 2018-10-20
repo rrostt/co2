@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "dev": "nodemon lib/index",
     "start": "node lib/index",
     "test": "jest test/unit/",
     "integration": "jest test/integration/"
@@ -11,6 +12,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "cors": "^2.8.4",
     "express": "^4.16.4"
   },
   "devDependencies": {
@@ -18,6 +20,7 @@
     "eslint-config-prettier": "^3.1.0",
     "eslint-plugin-prettier": "^3.0.0",
     "jest": "^23.6.0",
+    "nodemon": "^1.18.4",
     "prettier": "^1.14.3",
     "supertest": "^3.3.0"
   }
