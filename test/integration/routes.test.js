@@ -56,4 +56,14 @@ describe('routes', () => {
         expect(response.body.length).toBe(0)
       })
   })
+
+  test('/food/beef', () => {
+    return request(app)
+      .get('/food/beef')
+      .expect(200)
+      .then(response => {
+        expect(response.body.length).toBeGreaterThan(0)
+        expect(response.body[0].co2.mean).toBe(26)
+      })
+  })
 })
