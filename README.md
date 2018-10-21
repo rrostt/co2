@@ -18,6 +18,10 @@ It is all JSON and REST. PR for GraphQL would be sweet, but should iterate more 
 
 Get a list of all entries.
 
+## /food/:food
+
+Get information about specific food. Check the /all endpoint or the code for available foods. It is the name property in data.js.
+
 ## /q?property1=value1[&...&propertyN=valueN]
 
 Perform a query. Any query parameter will filter the result. E.g. /q?name=beef will return all beef entries. /q?country=sweden will result in everything relevant in Sweden. /q?country=sweden&name=candy will result in candy as consumed in Sweden.
